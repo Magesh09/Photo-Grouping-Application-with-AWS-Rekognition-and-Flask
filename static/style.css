@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #3498db;
+}
+
+header p {
+    font-size: 1.125rem;
+    color: #7f8c8d;
+}
+
+/* Summary Section */
+.summary {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.summary p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Message Section */
+.message {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.message p {
+    font-size: 1.125rem;
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+}
+
+/* Buttons */
+.submit-button, .download-button, .home-link {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1.125rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover, .download-button:hover, .home-link:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.submit-button:focus, .download-button:focus, .home-link:focus {
+    outline: none;
+}
+
+/* Form */
+.upload-form {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.file-input {
+    margin-bottom: 1rem;
+}
+
+.upload-form .submit-button {
+    background-color: #3498db;
+}
+
+/* Home Button */
+.home-button {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.home-link {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1.125rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.home-link:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.home-link:focus {
+    outline: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .image-item {
+        flex: 1 1 calc(50% - 1rem);
+        max-width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .image-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
