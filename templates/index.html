@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Detection and Grouping with AWS AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Image Detection and Grouping</h1>
+            <p>Upload your photos to detect and group them using AWS Rekognition.</p>
+        </header>
+        <main>
+            <form action="{{ url_for('upload_photos') }}" method="post" enctype="multipart/form-data" class="upload-form">
+                <input type="file" name="photos" multiple class="file-input" required>
+                <button type="submit" class="submit-button">Upload Photos</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Grouping Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Photo Grouping Details</h1>
+        </header>
+        <main>
+            <div class="summary">
+                <p><strong>Total Detected Persons:</strong> {{ categories|length }}</p>
+            </div>
+            <div class="message">
+                <p>Your photos have been grouped and categorized. You can download the grouped images from the link below.</p>
+                <a href="{{ url_for('download_file', filename=zip_filename) }}" class="download-button">Download Categorized Images</a>
+            </div>
+            <div class="home-button">
+                <a href="{{ url_for('index') }}" class="home-link">Home</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
